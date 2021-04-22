@@ -1,0 +1,1 @@
+/usr/local/sbin/minidlnad -f /etc/minidlna.conf -P /run/minidlna/minidlna.pid -r
