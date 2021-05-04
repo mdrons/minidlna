@@ -1,0 +1,11 @@
+clone the directory from git
+
+sh autogen.sh
+ 
+autoconf
+
+./configure --enable-thumbnail 
+
+make
+
+make install
