@@ -1,3 +1,6 @@
+install these
+apt-get install automake libexif-dev libexif12 libjpeg-dev libid3tag0 libid3tag0-dev libflac-dev libflac++-dev libvorbis-dev libsqlite3-dev libavformat-dev
+
 clone the directory from git
 
 sh autogen.sh
