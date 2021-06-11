@@ -90,6 +90,14 @@ struct client_type_s client_types[] =
 	  EUserAgent
 	},
 
+        /* ROKU Media Player */
+        { Roku,
+          FLAG_DLNA,
+          "Roku",
+          "Roku",
+          EUserAgent
+        },
+	
 	/* User-Agent: DLNADOC/1.50 SEC_HHP_[TV]UE40D7000/1.0 */
 	/* User-Agent: DLNADOC/1.50 SEC_HHP_ Family TV/1.0 */
 	/* USER-AGENT: DLNADOC/1.50 SEC_HHP_[TV] UE65JU7000/1.0 UPnP/1.0 */
