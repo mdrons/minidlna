@@ -85,7 +85,8 @@ enum client_types {
 	EKodi,
 	EMovian,
 	EStandardDLNA150,
-	EStandardUPnP
+	EStandardUPnP,
+	Roku
 };
 
 struct client_type_s {
