@@ -214,7 +214,8 @@ parse_nfo(const char *path, metadata_t *m)
 		free(esc_tag);
 	}
 
-	val = GetValueFromNameValueList(&xml, "capturedate");
+	/* val = GetValueFromNameValueList(&xml, "capturedate"); */
+	val = GetValueFromNameValueList(&xml, "premiered");
 	if (val)
 	{
 		char *esc_tag = unescape_tag(val, 1);
