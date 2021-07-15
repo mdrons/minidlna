@@ -216,6 +216,7 @@ parse_nfo(const char *path, metadata_t *m)
 
 	/* val = GetValueFromNameValueList(&xml, "capturedate"); */
 	val = GetValueFromNameValueList(&xml, "premiered");
+	DPRINTF(E_DEBUG, L_METADATA, "MIKE PREMIERED:val [GetValueFromNameValueList]: %s\n",val );
 	if (val)
 	{
 		char *esc_tag = unescape_tag(val, 1);
