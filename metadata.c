@@ -222,6 +222,27 @@ parse_nfo(const char *path, metadata_t *m)
 		m->date = escape_tag(esc_tag, 1);
 		free(esc_tag);
 	}
+	else {
+                val = GetValueFromNameValueList(&xml, "aired");
+                DPRINTF(E_DEBUG, L_METADATA, "MIKE AIRED:val [GetValueFromNameValueList]: %s\n",val );
+                if (val)
+                {
+                        char *esc_tag = unescape_tag(val, 1);
+                        m->date = escape_tag(esc_tag, 1);
+                        free(esc_tag);
+                }
+                else {
+                        val = GetValueFromNameValueList(&xml, "year");
+                        DPRINTF(E_DEBUG, L_METADATA, "MIKE YEAR:val [GetValueFromNameValueList]: %s\n",val );
+                        if (val)
+                        {
+                                char *esc_tag = unescape_tag(val, 1);
+                                m->date = escape_tag(esc_tag, 1);
+                                free(esc_tag);
+                        }
+                }
+        }
+        DPRINTF(E_DEBUG, L_METADATA, "MIKE DATE:val [GetValueFromNameValueList]: %s\n",val );
 
 	val = GetValueFromNameValueList(&xml, "genre");
 	if (val)
