@@ -3,7 +3,7 @@ add this line to /etc/sysctl.conf
 
 
 install these
-apt-get install autopoint automake libexif-dev libexif12 libjpeg-dev libid3tag0 libid3tag0-dev libflac-dev libflac++-dev libvorbis-dev libsqlite3-dev libavformat-dev libffmpegthumbnailer-dev
+apt-get install git gettext autopoint automake libexif-dev libexif12 libjpeg-dev libid3tag0 libid3tag0-dev libflac-dev libflac++-dev libvorbis-dev libsqlite3-dev libavformat-dev libffmpegthumbnailer-dev
 
 clone the directory from git
 
@@ -16,3 +16,7 @@ autoconf
 make
 
 make install
+
+
+/usr/local/sbin/minidlnad -f /etc/minidlna.conf -P /run/minidlna/minidlna.pid -r
+
